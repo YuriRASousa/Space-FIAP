@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+#game-container {
+    position: relative;
+}
+canvas {
+    display: block;
+    margin: auto;
+    background-image: url('/img/photo-1506318137071-a8e063b4bec0.jpg');
+    background-size: cover;
+}
+#startButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#startButton:hover {
+    background-color: #444;
+}
+
+#gameOverText {
+    display: none; /* Para garantir que o texto de "Game Over" esteja oculto inicialmente */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona um efeito de sombra ao texto */
+}
