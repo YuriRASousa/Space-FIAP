@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var canvas = document.getElementById('gameCanvas');
     var ctx = canvas.getContext('2d');
     var bgMusic = new Audio("sounds/background.mp3"); // Carrega o som de fundo
-    bgMusic.volume = 0.3; // Define o volume da música para 50%
+    bgMusic.volume = 0.3; // Define o volume da música para 30%
     var explosionSound = new Audio("sounds/explosion.mp3"); // Carrega o som de explosão
     explosionSound.volume = 0.1;
     var ship = {
@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var asteroids = [];
     var score = 0;
+    var highScore = localStorage.getItem('highScore') || 0; // Obtém o recorde do armazenamento local
     var gameOver = false;
     var gameLoop;
     var penaltyAmount = 100; // Defina a quantidade de pontos a serem removidos na penalidade
@@ -93,6 +94,12 @@ document.addEventListener("DOMContentLoaded", function() {
             drawExplosion();
             endGame();
             setTimeout(reloadPage, 5000); // Recarrega a página após 5 segundos
+        }
+
+        // Atualiza o recorde se necessário
+        if (score > highScore) {
+            highScore = score;
+            localStorage.setItem('highScore', highScore);
         }
 
         // Verifica se o tempo de atualização do score passou 2 segundos e aplica a penalidade se a nave estiver parada
@@ -174,6 +181,9 @@ document.addEventListener("DOMContentLoaded", function() {
         ctx.fillStyle = "white";
         ctx.font = "20px Arial";
         ctx.fillText("Pontos: " + score, 10, 30);
+
+        // Desenha o recorde no canto superior direito do canvas
+        ctx.fillText("Recorde: " + highScore, canvas.width - 150, 30);
     }
 
     function drawExplosion() {
