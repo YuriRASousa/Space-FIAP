@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-image: url('/img/photo-1506318137071-a8e063b4bec0.jpg');
 }
 
 #game-container {
@@ -20,10 +20,10 @@ canvas {
     transform: translate(-50%, -50%);
     padding: 15px 30px;
     font-size: 20px;
-    background-color: #222;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
@@ -41,4 +41,23 @@ canvas {
     color: #fff;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona um efeito de sombra ao texto */
+}
+.logo {
+    text-align: center;
+    color: #000000; /* Cor do texto branco */
+    transform: translateY(-50%);
+    margin-top: 50px; /* Move o logo para baixo */
+}
+
+.logo h1 {
+    font-size: 3.5em; /* Tamanho da fonte */
+    text-transform: uppercase; /* Transforma o texto para maiúsculas */
+    letter-spacing: 5px; /* Espaçamento entre letras */
+    margin: 0;
+    padding: 20px 30px; /* Espaçamento interno */
+    background-color: #ffffff; /* Cor de fundo para destacar o texto */
+    border-radius: 20px; /* Borda arredondada */
+    box-shadow: 0 6px 8px rgb(112, 100, 100); /* Sombra para efeito de elevação */
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
 }
