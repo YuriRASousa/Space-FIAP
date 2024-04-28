@@ -1,0 +1,42 @@
+1. **SPACE FIAP Game**
+
+Este é um jogo simples chamado Space FIAP, onde o jogador controla uma nave espacial e deve desviar de asteroides para sobreviver o maior tempo possível. O jogo é criado usando HTML, CSS e JavaScript.
+
+2. ### Como Jogar
+
+1. Abra o arquivo `index.html` no seu navegador preferido.
+2. Clique no botão "Iniciar Jogo" para começar.
+3. Use as teclas de seta (seta para cima, seta para baixo, seta para esquerda, seta para direita) para controlar a nave espacial e desviar dos asteroides.
+4. Tente sobreviver o máximo de tempo possível sem colidir com os asteroides. Cada segundo de sobrevivência aumenta sua pontuação.
+
+3. ### Recursos
+
+- **HTML:** O arquivo `index.html` contém a estrutura básica do jogo, incluindo o canvas onde o jogo é renderizado, o botão de iniciar o jogo e o texto de "Game Over".
+- **CSS:** O arquivo `styles.css` define o estilo do jogo, incluindo a posição e aparência dos elementos na tela.
+- **JavaScript:** O arquivo `game.js` contém toda a lógica do jogo, incluindo a movimentação da nave espacial, a geração de asteroides, a detecção de colisões, o cálculo da pontuação e muito mais.
+- **Imagens e Sons:** O jogo utiliza imagens de uma nave espacial, asteroides e uma explosão, além de sons de fundo e de explosão.
+
+4. ### Funcionalidades
+
+- Controle da nave espacial usando as teclas de seta.
+- Geração aleatória de asteroides em intervalos regulares.
+- Detecção de colisões entre a nave espacial e os asteroides.
+- Cálculo de pontuação com base no tempo de sobrevivência.
+- Exibição do recorde mais alto alcançado.
+- Efeitos sonoros de fundo e de explosão.
+
+5. ### Como Personalizar
+
+Você pode personalizar o jogo de várias maneiras:
+
+- **Imagens:** Substitua as imagens da nave espacial, dos asteroides e da explosão por imagens de sua escolha.
+- **Sons:** Troque os arquivos de áudio por outros sons ou adicione novos efeitos sonoros.
+- **Estilo:** Modifique o estilo do jogo alterando as propriedades CSS no arquivo `styles.css`.
+- **Lógica do Jogo:** Faça alterações na lógica do jogo no arquivo `game.js`, como ajustar a velocidade da nave e dos asteroides, ou adicionar novos elementos e funcionalidades.
+
+6. ### Notas
+
+- O recorde mais alto alcançado é armazenado localmente no navegador usando a API localStorage, permitindo que o jogador veja seu melhor desempenho mesmo após fechar e reabrir o jogo.
+- O jogo utiliza um fundo de imagem para criar um ambiente espacial, proporcionando uma experiência visual imersiva.
+
+Divirta-se jogando o Space FIAP e boa sorte desviando dos asteroides!
